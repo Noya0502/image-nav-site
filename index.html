@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="胡国静">
+  <meta name="description" content="青禾阅读 App 下导航设计——高级网页设计 I 图像解决方案四级项目。学号 24003140406，姓名 胡国静，类名前缀 Hgj406。">
+  <!-- 高级网页设计 I · 图像解决方案（四级项目） | 学号：24003140406 | 姓名：胡国静 | 类名前缀：Hgj406 -->
+  <title>青禾阅读 · 下导航设计</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="Hgj406-body">
+  <a class="Hgj406-skip" href="#main">跳到主要内容</a>
+
+  <!-- 顶部栏 -->
+  <header class="Hgj406-topbar">
+    <div class="Hgj406-topbar__inner">
+      <a class="Hgj406-brand" href="#" aria-label="青禾阅读首页">
+        <span class="Hgj406-brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4c3 0 5 1.5 8 1.5S17 4 20 4v14c-3 0-5-1.5-8-1.5S7 18 4 18V4z"/>
+            <path d="M12 5.5V16"/>
+          </svg>
+        </span>
+        <span class="Hgj406-brand__text">青禾阅读</span>
+      </a>
+      <span class="Hgj406-topbar__note">图像解决方案 · 下导航</span>
+    </div>
+  </header>
+
+  <main class="Hgj406-main" id="main">
+
+    <!-- ============ 面板1：首页 ============ -->
+    <section class="Hgj406-panel Hgj406-is-active" data-panel="home" aria-labelledby="Hgj406-home-title">
+      <div class="Hgj406-hero">
+        <span class="Hgj406-hero__tag">11.14 — 11.20 · 大连</span>
+        <h1 class="Hgj406-hero__title">把城市，<em>读成一本书</em></h1>
+        <p class="Hgj406-hero__lead">青禾阅读 App 下导航设计演示：内联 SVG 图标实现自适应下导航，字体图标演示 CSS 修饰能力。下方切换五个标签查看不同内容。</p>
+        <div class="Hgj406-hero__stats">
+          <div><strong>9</strong><span>天</span></div>
+          <div><strong>24</strong><span>场活动</span></div>
+          <div><strong>6</strong><span>处会场</span></div>
+        </div>
+      </div>
+
+      <div class="Hgj406-section__head">
+        <h2 class="Hgj406-section__title" id="Hgj406-home-title">今日推荐</h2>
+        <span class="Hgj406-section__more">更多 ›</span>
+      </div>
+      <ol class="Hgj406-feed">
+        <li class="Hgj406-feed__item">
+          <span class="Hgj406-feed__rank">01</span>
+          <div class="Hgj406-feed__body">
+            <h3 class="Hgj406-feed__title">海边的卡夫卡</h3>
+            <p class="Hgj406-feed__meta">村上春树 · 小说</p>
+          </div>
+          <span class="Hgj406-feed__heat">🔥 9.2</span>
+        </li>
+        <li class="Hgj406-feed__item">
+          <span class="Hgj406-feed__rank">02</span>
+          <div class="Hgj406-feed__body">
+            <h3 class="Hgj406-feed__title">人类简史</h3>
+            <p class="Hgj406-feed__meta">尤瓦尔·赫拉利 · 历史</p>
+          </div>
+          <span class="Hgj406-feed__heat">🔥 9.1</span>
+        </li>
+        <li class="Hgj406-feed__item">
+          <span class="Hgj406-feed__rank">03</span>
+          <div class="Hgj406-feed__body">
+            <h3 class="Hgj406-feed__title">设计中的设计</h3>
+            <p class="Hgj406-feed__meta">原研哉 · 设计</p>
+          </div>
+          <span class="Hgj406-feed__heat">🔥 8.8</span>
+        </li>
+      </ol>
+
+      <div class="Hgj406-section__head">
+        <h2 class="Hgj406-section__title">活动预告</h2>
+        <span class="Hgj406-section__more">更多 ›</span>
+      </div>
+      <div class="Hgj406-events">
+        <article class="Hgj406-event">
+          <div class="Hgj406-event__date"><strong>14</strong><span>周六</span></div>
+          <div class="Hgj406-event__body">
+            <h3 class="Hgj406-event__title">开幕论坛：在海边，朗读一座城</h3>
+            <p class="Hgj406-event__meta">14:00 · 星海广场阅读棚</p>
+          </div>
+        </article>
+        <article class="Hgj406-event">
+          <div class="Hgj406-event__date"><strong>16</strong><span>周一</span></div>
+          <div class="Hgj406-event__body">
+            <h3 class="Hgj406-event__title">旧书交换市集</h3>
+            <p class="Hgj406-event__meta">10:00 · 城市中央广场</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 面板2：书单 ============ -->
+    <section class="Hgj406-panel" data-panel="book" aria-labelledby="Hgj406-book-title" hidden>
+      <div class="Hgj406-section__head">
+        <h2 class="Hgj406-section__title" id="Hgj406-book-title">我的书单</h2>
+        <span class="Hgj406-section__more">12 本</span>
+      </div>
+      <div class="Hgj406-books">
+        <article class="Hgj406-book">
+          <div class="Hgj406-book__cover Hgj406-book__cover--1">小</div>
+          <div class="Hgj406-book__body">
+            <h3 class="Hgj406-book__title">小王子</h3>
+            <p class="Hgj406-book__author">圣埃克苏佩里</p>
+            <p class="Hgj406-book__progress">已读 60%</p>
+          </div>
+        </article>
+        <article class="Hgj406-book">
+          <div class="Hgj406-book__cover Hgj406-book__cover--2">百</div>
+          <div class="Hgj406-book__body">
+            <h3 class="Hgj406-book__title">百年孤独</h3>
+            <p class="Hgj406-book__author">马尔克斯</p>
+            <p class="Hgj406-book__progress">已读 30%</p>
+          </div>
+        </article>
+        <article class="Hgj406-book">
+          <div class="Hgj406-book__cover Hgj406-book__cover--3">活</div>
+          <div class="Hgj406-book__body">
+            <h3 class="Hgj406-book__title">活着</h3>
+            <p class="Hgj406-book__author">余华</p>
+            <p class="Hgj406-book__progress">已读完</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 面板3：发布 ============ -->
+    <section class="Hgj406-panel" data-panel="publish" aria-labelledby="Hgj406-pub-title" hidden>
+      <div class="Hgj406-section__head">
+        <h2 class="Hgj406-section__title" id="Hgj406-pub-title">发布读书笔记</h2>
+      </div>
+      <form class="Hgj406-form" onsubmit="return false;">
+        <label class="Hgj406-form__label">书名
+          <input class="Hgj406-form__input" type="text" placeholder="输入书名">
+        </label>
+        <label class="Hgj406-form__label">读书笔记
+          <textarea class="Hgj406-form__input Hgj406-form__input--area" rows="4" placeholder="写下你的感想……"></textarea>
+        </label>
+        <button class="Hgj406-button" type="submit">发布笔记</button>
+      </form>
+    </section>
+
+    <!-- ============ 面板4：消息（含未读） ============ -->
+    <section class="Hgj406-panel" data-panel="msg" aria-labelledby="Hgj406-msg-title" hidden>
+      <div class="Hgj406-section__head">
+        <h2 class="Hgj406-section__title" id="Hgj406-msg-title">消息</h2>
+        <span class="Hgj406-badge Hgj406-badge--dot" aria-label="有未读消息"></span>
+      </div>
+      <ul class="Hgj406-msgs">
+        <li class="Hgj406-msg Hgj406-msg--unread">
+          <span class="Hgj406-msg__dot" aria-hidden="true"></span>
+          <div class="Hgj406-msg__body">
+            <h3 class="Hgj406-msg__title">系统通知</h3>
+            <p class="Hgj406-msg__text">您报名的「开幕论坛」已通过审核，请准时参加。</p>
+          </div>
+          <time class="Hgj406-msg__time">10:24</time>
+        </li>
+        <li class="Hgj406-msg Hgj406-msg--unread">
+          <span class="Hgj406-msg__dot" aria-hidden="true"></span>
+          <div class="Hgj406-msg__body">
+            <h3 class="Hgj406-msg__title">青禾小助手</h3>
+            <p class="Hgj406-msg__text">您的书单「百年孤独」有新的读书笔记更新。</p>
+          </div>
+          <time class="Hgj406-msg__time">昨天</time>
+        </li>
+        <li class="Hgj406-msg">
+          <div class="Hgj406-msg__body">
+            <h3 class="Hgj406-msg__title">活动提醒</h3>
+            <p class="Hgj406-msg__text">「旧书交换市集」将于明天开始。</p>
+          </div>
+          <time class="Hgj406-msg__time">2 天前</time>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ 面板：我的 ============ -->
+    <section class="Hgj406-panel" data-panel="me" aria-labelledby="Hgj406-me-title" hidden>
+      <div class="Hgj406-me">
+        <div class="Hgj406-me__avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/>
+          </svg>
+        </div>
+        <div class="Hgj406-me__info">
+          <h2 class="Hgj406-me__name" id="Hgj406-me-title">胡国静</h2>
+          <p class="Hgj406-me__id">学号 24003140406</p>
+        </div>
+      </div>
+      <ul class="Hgj406-menu">
+        <li class="Hgj406-menu__item"><span>我的收藏</span><span class="Hgj406-menu__arrow">›</span></li>
+        <li class="Hgj406-menu__item"><span>阅读时长</span><span class="Hgj406-menu__arrow">›</span></li>
+        <li class="Hgj406-menu__item"><span>设置</span><span class="Hgj406-menu__arrow">›</span></li>
+      </ul>
+    </section>
+
+    <!-- 字体图标演示区（第二种技术） -->
+    <section class="Hgj406-section Hgj406-section--font" aria-labelledby="Hgj406-font-title">
+      <div class="Hgj406-section__head">
+        <h2 class="Hgj406-section__title" id="Hgj406-font-title">字体图标演示</h2>
+        <p class="Hgj406-section__desc">使用本地生成的 iconfont 字体（WOFF），通过 CSS 的 <code>color</code> 与 <code>font-size</code> 修饰图标。</p>
+      </div>
+      <ul class="Hgj406-font-grid">
+        <li class="Hgj406-font-card">
+          <span class="Hgj406-iconfont Hgj406-iconfont--home" aria-hidden="true"></span>
+          <span class="Hgj406-font-card__name">首页</span>
+          <span class="Hgj406-font-card__css">font-size: 28px<br>color: var(--accent)</span>
+        </li>
+        <li class="Hgj406-font-card Hgj406-font-card--big">
+          <span class="Hgj406-iconfont Hgj406-iconfont--book" aria-hidden="true"></span>
+          <span class="Hgj406-font-card__name">书单</span>
+          <span class="Hgj406-font-card__css">font-size: 44px<br>color: var(--green)</span>
+        </li>
+        <li class="Hgj406-font-card">
+          <span class="Hgj406-iconfont Hgj406-iconfont--calendar" aria-hidden="true"></span>
+          <span class="Hgj406-font-card__name">活动</span>
+          <span class="Hgj406-font-card__css">font-size: 32px<br>color: var(--gold)</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- 固定下导航 -->
+  <nav class="Hgj406-tabbar" role="navigation" aria-label="主导航">
+    <ul class="Hgj406-tabbar__list">
+      <li class="Hgj406-tabbar__item Hgj406-is-active" data-target="home">
+        <a class="Hgj406-tabbar__link" href="#" aria-current="page">
+          <span class="Hgj406-tabbar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-5h4v5"/>
+            </svg>
+          </span>
+          <span class="Hgj406-tabbar__label">首页</span>
+        </a>
+      </li>
+      <li class="Hgj406-tabbar__item" data-target="book">
+        <a class="Hgj406-tabbar__link" href="#">
+          <span class="Hgj406-tabbar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h7a2 2 0 0 1 2 2v14a1.5 1.5 0 0 0-1.5-1.5H4z"/>
+              <path d="M20 4h-7a2 2 0 0 0-2 2v14a1.5 1.5 0 0 1 1.5-1.5H20z"/>
+            </svg>
+          </span>
+          <span class="Hgj406-tabbar__label">书单</span>
+        </a>
+      </li>
+      <li class="Hgj406-tabbar__item Hgj406-tabbar__item--fab" data-target="publish">
+        <a class="Hgj406-tabbar__link" href="#" aria-label="发布">
+          <span class="Hgj406-tabbar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </span>
+          <span class="Hgj406-tabbar__label">发布</span>
+        </a>
+      </li>
+      <li class="Hgj406-tabbar__item" data-target="msg">
+        <a class="Hgj406-tabbar__link" href="#">
+          <span class="Hgj406-tabbar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+            <span class="Hgj406-badge" aria-label="2 条未读消息">2</span>
+          </span>
+          <span class="Hgj406-tabbar__label">消息</span>
+        </a>
+      </li>
+      <li class="Hgj406-tabbar__item" data-target="me">
+        <a class="Hgj406-tabbar__link" href="#">
+          <span class="Hgj406-tabbar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/>
+            </svg>
+          </span>
+          <span class="Hgj406-tabbar__label">我的</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
